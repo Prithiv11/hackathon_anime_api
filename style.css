@@ -1,0 +1,125 @@
+button{
+    border: 0px;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 30px;
+    color: white;
+}
+button:active{
+    background-color: rgba(0, 0, 0, 0.055);
+    color: rgb(68, 64, 64);
+}
+input{
+    background-color: transparent;
+    outline: transparent;
+    color: white;
+    border: none;
+    height: 45px;
+    width: 100%;
+
+}
+.inputBoxSet{
+    display: flex;
+    background-color: rgba(194, 190, 190, 0.137);
+    border-radius: 30px;
+    width: 80vw;
+    padding-left: 20px;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.gridImg{
+    height: fit-content;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 10px ;
+    margin: 20px;
+    width: 195px;
+    padding: 15px;
+    font-family: sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+    
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 12px 0px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+img{
+    height: 250px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.parentDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+}
+@media only screen and (max-width: 800px) {
+    input{
+        background-color: transparent;
+        outline: transparent;
+        border: none;
+        padding: 2px;
+        height: 45px;
+        width: 75vw;
+    }
+    .inputBoxSet{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.137);
+        border-radius: 30px;
+        width: fit-content;
+        padding-left: 20px;
+        margin: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+  }
+
+  .showMessage {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.384);
+  }
+  
+  .card .showMessage {
+        font-size: 14px;
+        font-weight: lighter;
+        line-height: 20px;
+        /* text-indent: 40px; */
+        visibility: hidden;
+        height: 250px;
+        width: 160px;
+        background-color: rgba(0, 0, 0, 0.781);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+  
+   
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .card:hover .showMessage {
+    visibility: visible;
+  }
+  body{
+      background-image: url("bg.jpg");
+      object-fit: cover;
+  }
+  h1{
+      color:white;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 10px;
+      word-spacing: 10px;
+      margin: 40px;
+      font-weight: bolder;
+      text-shadow: 2px 3px black;
+  }
